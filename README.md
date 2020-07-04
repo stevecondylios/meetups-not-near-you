@@ -3,11 +3,13 @@
 
 # Find Online Meetups on Any Topic
 
-With local Data Science meetups cancelled, I sought to find where in the world has upcoming online meetups on the topic - and find I did! 
+With local Data Science meetups cancelled, I sought to find where in the world had upcoming *online* meetups - and find I did! 
 
 Some have some spectacular speaker line-ups, including some of the world's best in natural language processing, image classification systems, reinforcement learning in robotics, forecasting and a lot on more niche topics! - much more variety than I would ever have access to locally.
 
-Many of these meetups are intended for a smallish (<300) audiences, so some are fairly unpolished, which, IMHO, adds to the enjoyment of pilfering through them for hidden teasures, and the kind of frank discussion not possible in wider forums. As PG once [alluded to](https://www.youtube.com/watch?v=3mAd5LJFdb4#t=25m43s), after audiences become sufficiently large, speakers will cease speaking frankly:
+Many of these meetups are intended for a smallish (<300) audiences, so some are fairly unpolished, which, IMHO, adds to the enjoyment of pilfering through them for hidden teasures, and offers the kind of frank discussion not possible in wider forums. 
+
+As PG once [alluded to](https://www.youtube.com/watch?v=3mAd5LJFdb4#t=25m43s), after audiences become sufficiently large, speakers will cease speaking frankly:
 
 <br>
 
@@ -22,19 +24,28 @@ So will this renaissance of candid, intellectual discussion persist? Probably no
 
 # Installation
 
-First, install R, and RStudio IDE (both free). Installation time: ~ 2 minutes for both. 
+Install R, and RStudio IDE (google them, they're both free). Installation time: ~ 2 minutes for both. 
 
 
 
 # Try for yourself!
 
-Clone the repo and open `meetups.R` with RStudio and set the `topic` variable (line 5) to something you enjoy - here are [some ideas](https://www.meetup.com/topics/) - copy the topic from the url: whatever comes after 'meetup.com/topics/'.
+Clone the repo and open `meetups.R` with RStudio and set the `topic` variable (line 5) to something you enjoy - here are [some ideas](https://www.meetup.com/topics/) - copy the topic from the url: whatever comes after 'meetup.com/topics/' - the default in the script is `[r-project-for-statistical-computing](https://www.meetup.com/topics/r-project-for-statistical-computing/)`
 
-Last, select all the code in the script and run it with command + enter (or run it line by line if you prefer). In a few minutes, you'll have a curated `data.frame` of meetups on your topic of choice, their time (in your timezone), descriptions and, importantly, the video conference links! 
+E.g. 
+
+ - `[hacking](https://www.meetup.com/topics/hacking/)`
+ - `[linux](https://www.meetup.com/topics/linux/)`
+ - `[hpc-programming](https://www.meetup.com/topics/hpc-programming/)`
+ - `[founders](https://www.meetup.com/topics/founders/)`
+ - `[arduino](https://www.meetup.com/topics/arduino/)`
+
+
+Then select all the code in the script and run it with command + enter (or run it line by line if you prefer). In a few minutes, you'll have a curated `data.frame` of meetups on your topic of choice, their time (in your timezone), descriptions and, importantly, the video conference links! 
 
 
 
-# Example
+# Example output
 
 Clone the repo and read in `r_meetups.RDS` with `meetups <- readRDS("r_meetups.RDS")`. 
 
