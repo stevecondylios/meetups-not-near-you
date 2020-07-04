@@ -30,15 +30,15 @@ Install R, and RStudio IDE (google them, they're both free). Installation time: 
 
 # Try for yourself!
 
-Clone the repo and open `meetups.R` with RStudio and set the `topic` variable (line 5) to something you enjoy - here are [some ideas](https://www.meetup.com/topics/) - copy the topic from the url: whatever comes after 'meetup.com/topics/' - the default in the script is `[r-project-for-statistical-computing](https://www.meetup.com/topics/r-project-for-statistical-computing/)`
+Clone the repo and open `meetups.R` with RStudio and set the `topic` variable (line 5) to something you enjoy - here are [some ideas](https://www.meetup.com/topics/) - copy the topic from the url: whatever comes after 'meetup.com/topics/' - the default in the script is [`r-project-for-statistical-computing`](https://www.meetup.com/topics/r-project-for-statistical-computing/)
 
 E.g. 
 
- - `[hacking](https://www.meetup.com/topics/hacking/)`
- - `[linux](https://www.meetup.com/topics/linux/)`
- - `[hpc-programming](https://www.meetup.com/topics/hpc-programming/)`
- - `[founders](https://www.meetup.com/topics/founders/)`
- - `[arduino](https://www.meetup.com/topics/arduino/)`
+ - [`hacking`](https://www.meetup.com/topics/hacking/)
+ - [`linux`](https://www.meetup.com/topics/linux/)
+ - [`hpc-programming`](https://www.meetup.com/topics/hpc-programming/)
+ - [`founders`](https://www.meetup.com/topics/founders/)
+ - [`arduino`](https://www.meetup.com/topics/arduino/)
 
 
 Then select all the code in the script and run it with command + enter (or run it line by line if you prefer). In a few minutes, you'll have a curated `data.frame` of meetups on your topic of choice, their time (in your timezone), descriptions and, importantly, the video conference links! 
