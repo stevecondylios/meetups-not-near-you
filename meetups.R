@@ -147,6 +147,7 @@ make_df <- function() {
   stringsAsFactors = FALSE)
 }
 
+# Try setting depth to a smaller number to start with, e.g. 50
 depth <- length(meetup_links) 
 
 list_output <- list()
@@ -219,7 +220,7 @@ for(i in 1:depth) {
 
 
 # Collate all events into a single data.frame for easy inspection
-meetups = do.call(rbind, list_output) %>% as_tibble()
+meetups <- do.call(rbind, list_output) %>% as_tibble()
 
 
 # Convert description field's character entities to HTML so it can be parsed
