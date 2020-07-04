@@ -20,20 +20,23 @@ So will this renaissance of candid, intellectual discussion persist? Probably no
 
 
 
-# Use
+# Installation
 
 First, install R, and RStudio IDE (both free). Installation time: ~ 2 minutes for both. 
 
-Second, open `meetups.R` with RStudio and set the `topic` variable to something you enjoy - here are [some ideas](https://www.meetup.com/topics/) - copy the topic from the url: whatever comes after 'meetup.com/topics/'.
 
-Last, select all the code in the script and run it with command + enter (or run it line by line if you prefer). In a few minutes, you'll have a curated data.frame of meetups on your topic of choice, their time (in your timezone), as well as descriptions and, importantly, the video conference links! 
 
+# Try for yourself!
+
+Clone the repo and open `meetups.R` with RStudio and set the `topic` variable (line 5) to something you enjoy - here are [some ideas](https://www.meetup.com/topics/) - copy the topic from the url: whatever comes after 'meetup.com/topics/'.
+
+Last, select all the code in the script and run it with command + enter (or run it line by line if you prefer). In a few minutes, you'll have a curated `data.frame` of meetups on your topic of choice, their time (in your timezone), descriptions and, importantly, the video conference links! 
 
 
 
 # Example
 
-Clone the repo and read in the r_meetups.RDS with `meetups <- readRDS("r_meetups.RDS")`. 
+Clone the repo and read in `r_meetups.RDS` with `meetups <- readRDS("r_meetups.RDS")`. 
 
 View and explore the file you read with `View(meetups)`
 
