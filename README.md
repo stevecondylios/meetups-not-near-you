@@ -47,9 +47,17 @@ Then select all the code in the script and run it with command + enter (or run i
 
 # Sample output
 
-Clone the repo and read in `r_meetups.RDS` with `meetups <- readRDS("r_meetups.RDS")`. 
+Clone the repo and read in `r_meetups.RDS` with 
 
-View and explore the file you read with `View(meetups)`
+```r
+meetups <- readRDS("r_meetups.RDS")
+``` 
+
+View and explore the file you read with 
+
+```r
+View(meetups)
+```
 
 Note all the zoom, meet.google, youtube, and facebook live stream links (a couple highlighted below)
 
