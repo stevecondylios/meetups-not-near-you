@@ -18,7 +18,7 @@ As PG once [alluded to](https://www.youtube.com/watch?v=3mAd5LJFdb4#t=25m43s), a
 
 <br>
 
-So will this renaissance of candid, intellectual discussion persist? Probably not, so check them out while they last! 
+So will this renaissance of candid, intellectual discussion persist? Probably not, so find them and check them out while they last! 
 
 
 
