@@ -50,7 +50,7 @@ Then select all the code in the script and run it with command + enter (or run i
 Clone the repo and read in `r_meetups.RDS` with 
 
 ```r
-meetups <- readRDS("r_meetups.RDS")
+meetups <- readRDS("data/r_meetups.RDS")
 ``` 
 
 View and explore the file you read with 
@@ -62,6 +62,25 @@ View(meetups)
 Note all the zoom, meet.google, youtube, and facebook live stream links (a couple highlighted below)
 
 ![First 23 R meetups](https://github.com/stevecondylios/meetups-not-near-you/blob/master/meetups.png?raw=true)
+
+
+
+
+# Bonus
+
+Once you've crawled a topic's meetups, use `whats_on()` to see what's on today or tomorrow
+
+
+E.g.
+
+```r
+
+# meetups <- readRDS("data/r_meetups.RDS")
+whats_on("r-project-for-statistical-computing", meetups)
+
+```
+
+
 
 
 

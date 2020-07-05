@@ -130,7 +130,8 @@ get_duration <- function(meetup_info) {
 sleep_between_requests <- 10 # Seconds
 
 make_df <- function() { 
-  data.frame(group=character(),
+  data.frame(topic=character(),
+  group=character(),
   group_url=character(),
   location=character(),
   online=character(),
@@ -173,6 +174,7 @@ for(i in 1:depth) {
   
     output <- make_df()
     
+    output[1:len, "topic"] <- topic
     output[1:len, "group"] <- get_group(meetup_info)
     output[1:len, "group_url"] <- meetup_links[i]
     output[1:len, "location"] <- get_location(meetup_info)
@@ -290,11 +292,34 @@ meetups %>%
 
 
 
+# Use whats_on() to see what's on today or tomorrow
 
-
-
-
-
+# whats_on <- function(topic, meetups_df, links_only = FALSE) {
+#   
+#   today_or_tomorrow <- meetups %>% 
+#     mutate(date = your_local_time %>% as.Date) %>% 
+#     filter(date == today() | date == today() + 1) 
+#   
+#   if(links_only) {
+#     
+#     today_or_tomorrow <-filter(map_lgl(zoom_links, ~ .x %>% length %>% {. != 0}) |
+#          map_lgl(meet_links, ~ .x %>% length %>% {. != 0}) |
+#          map_lgl(youtube_links, ~ .x %>% length %>% {. != 0}) |
+#          map_lgl(facebook_links, ~ .x %>% length %>% {. != 0}) |
+#          (!is.na(find_us)) & online == TRUE) 
+#     
+#   }
+# 
+#   today_or_tomorrow %>%
+#     mutate(available_links = mapply(c, find_us, zoom_links, meet_links, youtube_links, facebook_links)) %>% 
+#     select(group, name, desc_clean, available_links, your_local_time, link) %>% 
+#     arrange(your_local_time) 
+# }
+# 
+# 
+# 
+# whats_on("r-project-for-statistical-computing", meetups) %>% 
+#   as.data.frame
 
 
 
